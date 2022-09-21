@@ -63,15 +63,15 @@ Student::~Student() {};
 
 //use getters and setters after written
 void Student::print() {
-	cout << getter_ID() << " "
-		<< getter_first_name() << " "
-		<< getter_last_name() << " "
-		<< getter_email() << " "
-		<< getter_age() << " "
-		<< getter_days()[0] << " "
-		<< getter_days()[1] << " "
-		<< getter_days()[2] << " "
-		<< getter_degree_program() << endl;
+	cout << getter_ID() << "\t"
+		<< getter_first_name() << "\t"
+		<< getter_last_name() << "\t"
+		<< getter_email() << "\t"
+		<< getter_age() << "\t"
+		<< getter_days()[0] << "\t"
+		<< getter_days()[1] << "\t"
+		<< getter_days()[2] << "\t"
+		<< getter_degree_program() << endl ;
 };
 
 

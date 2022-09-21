@@ -8,7 +8,7 @@ using namespace std;
 namespace S
 {
 	class Student {
-		public:
+		private:
 			string student_ID;
 			string first_name; 
 			string last_name; 

@@ -70,10 +70,13 @@ void Roster::remove(string student_ID) {
 			DegreeProgram degree = DegreeProgram::NETWORK;
 			Roster::classRosterArray[i]->setter_degree_program(degree);
 		};
-		Roster::classRosterArray[i]->print();
+		
+	}
+	if (found == true) {
+		Roster::printAll();
 	}
 	if (found == false) {
-		cout << "Student not found.";
+		cout << student_ID <<  ": Student not found.";
 	};
 }
 

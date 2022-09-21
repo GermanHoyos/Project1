@@ -9,6 +9,8 @@ using namespace std;
 
 int main() {
 
+	cout << "C867 " << "C++ " << "ID: 010096988 " << "German Hoyos " << endl << endl;
+
 	const string studentData[5] = {
 		"A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY",
 		"A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK",
@@ -19,12 +21,19 @@ int main() {
 
 	Roster roster;
 
-	for (int i = 0; i < 5; i++) { roster.parse(studentData[i]); }
+	for (int i = 0; i < 5; i++) { roster.parse(studentData[i]); };
 
-	//roster.remove("A2");
-	//roster.printAll();
-	//roster.printAverageDaysInCourse("A1");
-	//roster.printInvalidEmails();
-	//roster.printByDegreeProgram(SOFTWARE);
+	roster.printAll();  cout << endl;
+
+	roster.printAverageDaysInCourse("A1");  cout << endl << endl;
+
+	roster.printInvalidEmails();  cout << endl;
+	
+	roster.printByDegreeProgram(SOFTWARE);  cout << endl ;
+
+	roster.remove("A3"); cout << endl;
+
+	roster.remove("A3"); cout << endl;
+	
 	return 0;
 }
