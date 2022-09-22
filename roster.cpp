@@ -150,4 +150,6 @@ Roster::~Roster() {
 		delete classRosterArray[i];	   //removes index
 		classRosterArray[i] = nullptr; //removes pointer
 	}
+
+	cout << "Destructor Method Called"; //optional
 };
