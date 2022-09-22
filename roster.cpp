@@ -73,7 +73,7 @@ void Roster::remove(string student_ID) {
 		
 	}
 	if (found == true) {
-		Roster::printAll();
+		//Roster::printAll(); //optional if i want to indicate successfull remove without "printAll"
 	}
 	if (found == false) {
 		cout << student_ID <<  ": Student not found.";
@@ -145,4 +145,9 @@ void Roster::printByDegreeProgram(DegreeProgram degree) {
 	}
 }
 
-Roster::~Roster() {};
+Roster::~Roster() {
+	for (int i = 0; i < 5; i++) {
+		delete classRosterArray[i];	   //removes index
+		classRosterArray[i] = nullptr; //removes pointer
+	}
+};
