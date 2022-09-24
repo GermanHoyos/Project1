@@ -32,8 +32,10 @@ int main() {
 	classRoster.printInvalidEmails();  cout << endl;
 	
 	//4b
-	classRoster.printAverageDaysInCourse("A1");  cout << endl << endl;
-	
+	for (int i = 0; i < 5; i++) {
+		classRoster.printAverageDaysInCourse(classRoster.classRosterArray[i]->getter_ID());
+	}; cout << endl;
+
 	//4c
 	classRoster.printByDegreeProgram(SOFTWARE);
 

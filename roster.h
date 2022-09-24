@@ -10,7 +10,7 @@ using namespace S;
 namespace D
 {
 	class Roster {
-		private:
+		public:
 			int dArr[3];
 			int indexPosition = -1;
 			Student* classRosterArray[5];

@@ -88,11 +88,12 @@ void Roster::printAll() {
 
 void Roster::printAverageDaysInCourse(string student_ID) {
 	for (int i = 0; i < 5; i++) {
-		if (student_ID == Roster::classRosterArray[i]->getter_ID()) {
-			cout << Roster::classRosterArray[i]->getter_ID() << " ";
-			for (int x = 0; x < 3; x++) { 
-				cout << Roster::classRosterArray[i]->getter_days()[x] << " "; 
-			};
+		if (student_ID == classRosterArray[i]->getter_ID()) {
+			int sum = 0; 
+			int avg = 0;
+			for (int x = 0; x < 3; x++) { sum += Roster::classRosterArray[i]->getter_days()[x]; };
+			avg = sum / 3;
+			cout << Roster::classRosterArray[i]->getter_ID() << " average days:  " << avg << endl;
 		}
 	}
 }
